@@ -38,7 +38,7 @@ p {
 
 .hero {
     background-color: #D7DFF2;
-    height: 30rem;
+    height: 32.5rem;
     margin-top: 7.8rem;
     border-top: 3px solid black;
 }
@@ -52,6 +52,13 @@ h1 {
     font-family: "Bebas Neue";
 }
 
+@media (max-width: 991px) {
+  .hero-text h1 {
+    font-size: 3rem;
+  }
+}
+
+
 .hero button {
   background-color: #FFB66E;
   padding: .5rem 3rem;
@@ -63,6 +70,38 @@ h1 {
 
 .hero button:hover {
     background-color: #F5AB61;
+}
+
+@media screen and (max-width: 991px) {
+  .hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .hero-text p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    margin-top: 3rem;
+  }
+
+  .fade-in-right {
+    width: 400px;
+    height: 400px;
+  }
+  
+  .hero {
+    height: 46.5rem;
+  }
+
+  .pic {
+    max-width: 30rem;
+  }
 }
 
 h2 {
@@ -128,8 +167,19 @@ h4 {
 
 footer {
     background-color: #8aabf9;
-    padding: 3rem 0 1rem 0;
     border-top: 3px solid black;
+}
+
+@media (min-width: 992px) {
+    footer {
+    padding: 3rem 0 1rem 0;
+  }
+}
+
+@media (max-width: 992px) {
+  footer {
+  padding: 3rem 0 1rem 0;
+}
 }
 
 .nav-link, 
@@ -154,10 +204,18 @@ footer {
   
 }
 
-.service-one,
-.service-three {
-  margin-top: 10rem;
+@media (min-width: 992px) {
+    .service-one,
+    .service-three {
+    margin-top: 10rem;
+  }
+
+  .services-title {
+    padding-left: 8rem;
+  }
 }
+
+
 
 .services-title {
   margin-left: 6rem;
@@ -192,6 +250,7 @@ footer li:hover {
 
 .copywrite {
   font-family: "Abel";
+  font-size: .8rem;
 }
 
 .our-services {
@@ -252,4 +311,8 @@ footer li:hover {
 
 html {
   scroll-behavior: smooth;
+}
+
+.company {
+  margin-left: 3rem;
 }
