@@ -327,3 +327,13 @@ html {
     max-height: 22rem;
   }
 }
+
+.dropdown-menu {
+  background-color: transparent;
+  border: none;
+}
+
+.dropdown-item:hover {
+  background-color: hsl(223, 54%, 95%, .5);
+  color: #215266;
+}
