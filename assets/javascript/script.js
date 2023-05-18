@@ -3,4 +3,3 @@ window.onload = function() {
     var heroText = heroSection.querySelector('.hero-text');
     heroText.classList.add('fade-in');
   }
-

@@ -15,6 +15,8 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Abel&family=Bebas+Neue&display=swap" rel="stylesheet">
+
+        <script src="https://kit.fontawesome.com/dec85e8162.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
@@ -25,9 +27,6 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav gap-4">
-                    <li class="nav-item">
-                        <a class="nav-link fs-4" href="#">Home</a>
-                    </li>
                     <li class="nav-item">
                         <a class="nav-link fs-4" href="#">About Us</a>
                     </li>
@@ -44,6 +43,18 @@
                         <a class="nav-link fs-4" href="#">Contact</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link fs-4" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fs-4" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Legal
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Privacy Policy</a></li>
+                          <li><a class="dropdown-item" href="#">Terms of Service</a></li>
+                        </ul>              
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link fs-4" href="#">Careers</a>
                     </li>
                 </ul>
@@ -52,7 +63,7 @@
 
         <main>
             <div class="container-fluid">
-                <div class="row hero" id="hero-section">
+                <div class="row hero">
                     <div class=" hero-text col-md-5 align-self-center mx-lg-4">
                         <h1>Selling online is vital to business growth.</h1>
                         <p class="mt-3 mb-5 fs-5">Our team of experts are ready to help get your business started!</p>
@@ -70,7 +81,7 @@
                         <img class="pic" src="./assets/images/Untitled design(21).png" alt="">
                     </div>
                     <div class="col-md-6">
-                        <h2 class="mission-heading mt-3 mb-4">
+                        <h2 class="mission-heading mt-3 mb-4 mx-auto">
                             <span class="mission-heading-top">Our</span>
                             <span class="mission-heading-bottom">Mission</span>
                         </h2> 
@@ -125,7 +136,7 @@
 
             <div class="container-fluid pt-5 team py-4 pb-5">
                 <div class="row justify-content-center">
-                    <div class="col d-flex justify-content-center mb-5">
+                    <div class="col d-flex justify-content-center mb-5 text-center">
                         <h4>Meet Our Team</h4>
                     </div>
                     <div class="row">
@@ -149,21 +160,23 @@
             </div>
 
             <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-6 col-md-4">
-                        <img src="./assets/images/1.png" alt="">
+                <div class="row">
+                    <div class="col-md-4 d-flex justify-content-center">
+                        <img src="./assets/images/Untitled design(17).png" alt="">
                     </div>
-                    <div class="col-6 col-md-4">
+                    <div class="col-md-4 d-flex justify-content-center">
                         <img src="./assets/images/2.png" alt="">
                     </div>
-                    <div class="col-6 col-md-4">
+                    <div class="col-md-4 d-flex justify-content-center">
                         <img src="./assets/images/3.png" alt="">
                     </div>
-                    <div class="col-6 col-md-4">
-                        <img src="./assets/images/4.png" alt="">
-                    </div>
-                    <div class="col-6 col-md-4">
-                        <img src="./assets/images/5.png" alt="">
+                    <div class="d-md-flex justify-content-center">
+                        <div class="col-md-4 d-flex justify-content-center">
+                            <img src="./assets/images/4.png" alt="">
+                        </div>
+                        <div class="col-md-4 d-flex justify-content-center">
+                            <img src="./assets/images/5.png" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -176,10 +189,10 @@
                     <div class="col-lg-5 d-flex justify-content-center align-items-center flex-column">
                         <img src="./assets/images/FINENACIAL.png" alt="">
                     </div>
-                    <div class="col-lg-7 d-flex justify-content-around align-items-baseline">
+                    <div class="col-lg-7 d-sm-flex justify-content-around align-items-baseline text-center">
                         <div class="col d-flex justify-content-center flex-column">
                             <h6>Company</h6>
-                            <ul>
+                            <ul class="list-unstyled">
                                 <li>About</li>
                                 <li>Blog</li>
                                 <li>Careers</li>
@@ -188,7 +201,7 @@
                         </div>
                         <div class="col d-flex justify-content-center flex-column">
                             <h6>Services</h6>
-                            <ul>
+                            <ul class="list-unstyled">
                                 <li>Website Design</li>
                                 <li>Social Media Management</li>
                                 <li>Search Engine Optimization</li>
@@ -196,18 +209,18 @@
                         </div>
                         <div class="col d-flex justify-content-center flex-column">
                             <h6>Legal</h6>
-                            <ul>
+                            <ul class="list-unstyled">
                                 <li>Privacy Policy</li>
                                 <li>Terms of Service</li>
                             </ul>
                         </div>
                         <div class="col d-flex justify-content-center flex-column">
                             <h6>Connect</h6>
-                            <ul>
-                                <li>Facebook</li>
-                                <li>Instagram</li>
-                                <li>Twitter</li>
-                                <li>LinkedIn</li>
+                            <ul class="list-unstyled d-flex justify-content-center align-items-center flex-column gap-2 fs-3">
+                                <i class="fa-brands fa-facebook"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-linkedin-in"></i>
                             </ul>
                         </div>
                     </div>

@@ -316,3 +316,14 @@ html {
 .company {
   margin-left: 3rem;
 }
+
+.pic {
+  max-width: 100%; 
+  height: auto;
+}
+
+@media (max-width: 576px) {
+  .fade-in-right {
+    max-height: 22rem;
+  }
+}
