@@ -1,3 +1,21 @@
+:root {
+  --primary-color-light: hsla(222, 51%, 90%, .5);
+  --primary-color: #D7DFF2;
+  --primary-color-dark: #8aabf9;
+  --primary-color-darker: #215266;
+
+  --secondary-color-light: hsl(30, 100%, 72%, .5);
+  --secondary-color: #FFB66E;
+  --secondary-color-dark: #F5AB61;
+
+  --neutral-color-light: hsl(0, 0%, 100%);
+  --neutral-color: hsl(0, 0%, 83%);
+  --neutral-color-dark: hsl(0, 0%, 0%);
+
+  --base-font: "Abel", sans-serif;
+  --accent-font: "Bebas Neue", cursive;
+}
+
 /* Reset */
 *, *::before, *::after {
     box-sizing: border-box;
@@ -35,12 +53,12 @@ html {
 }
 
 p {
-  font-family: "Abel";
+  font-family: var(--base-font);
 }
 
 /* Navbar */
 .navbar {
-    background-color: hsl(222, 51%, 90%, .5);
+    background-color: var(--primary-color-light);
 }
 
 .logo {
@@ -50,9 +68,8 @@ p {
 
 .nav-link, 
 .dropdown {
-    color: #215266;
-    font-weight: 600;
-    font-family: "Abel";
+    color: var(--primary-color-darker);
+    font-family: var(--base-font);
 }
 
 .nav-link:hover, 
@@ -60,22 +77,21 @@ p {
   text-decoration: underline;
 }
 
-.dropdown-menu {
-  background-color: transparent;
-  border: none;
+.dropdown-item:hover {
+  background-color: var(--primary-color-light);
+  color: var(--primary-color-darker);
 }
 
-.dropdown-item:hover {
-  background-color: hsl(223, 54%, 95%, .5);
-  color: #215266;
+.dropdown-item-divider {
+  border-bottom: 1px solid var(--neutral-color);
 }
 
 /* Hero */
 .hero {
-  background-color: #D7DFF2;
+  background-color: var(--primary-color);
   height: 32.5rem;
   margin-top: 7.8rem;
-  border-top: 3px solid black;
+  border-top: 3px solid var(--neutral-color-dark);
 }
 
 h1 {
@@ -84,7 +100,7 @@ h1 {
   margin-bottom: 1rem;
   text-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.5);
   max-width: 20ch;
-  font-family: "Bebas Neue";
+  font-family: var(--accent-font);
 }
 
 @media (max-width: 991px) {
@@ -95,16 +111,16 @@ h1 {
 
 
 .hero button {
-  background-color: #FFB66E;
+  background-color: var(--secondary-color);
   padding: .5rem 3rem;
   border-radius: 10%/50%;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
   border: none;
-  color: white;
+  color: var(--neutral-color-light);
 }
 
 .hero button:hover {
-    background-color: #F5AB61;
+    background-color: var(--secondary-color-dark);
 }
 
 @media screen and (max-width: 991px) {
@@ -187,11 +203,11 @@ h2 {
     line-height: 1.2;
     text-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.5);
     max-width: 20ch;
-    font-family: "Bebas Neue";
+    font-family: var(--accent-font);
 }
 
 .imp-text {
-  color: #215266;
+  color: var(--primary-color-darker);
 }
 
 .mission-heading {
@@ -212,7 +228,7 @@ h2 {
 
 .our-mission {
   padding-top: 5rem;
-  background-color: hsl(30, 100%, 72%, .5);
+  background-color: var(--secondary-color-light);
 }
 
 .mission {
@@ -226,7 +242,7 @@ h3 {
   margin-bottom: 1rem;
   text-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.5);
   max-width: 20ch;
-  font-family: "Bebas Neue";
+  font-family: var(--accent-font);
 }
 
 .icons {
@@ -248,27 +264,21 @@ h3 {
 .services-title {
 margin-left: 6rem;
 font-size: 2.5rem;
-font-family: "Abel";
+font-family: var(--base-font);
 }
 
 .services-btn {
 margin-top: 1rem;
 }
 
-.our-services {
-  background-color: hsl(30, 100%, 72%, .5);
-}
-
-.services {
-  background-color: hsl(30, 100%, 72%, .5);
-}
-
+.our-services,
+.services,
 .btn-container {
-  background-color: hsl(30, 100%, 72%, .5);
+  background-color: var(--secondary-color-light);
 }
 
 .btn {
-  background-color: #FFB66E;
+  background-color: var(--secondary-color);
   padding: .5rem 3rem;
   border-radius: 10%/50%;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
@@ -277,7 +287,7 @@ margin-top: 1rem;
 }
 
 .btn:hover {
-  background-color: #F5AB61;
+  background-color: var(--secondary-color-dark);
 }
 
 /* Team */
@@ -287,11 +297,11 @@ h4 {
   margin-bottom: 1rem;
   text-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.5);
   max-width: 20ch;
-  font-family: "Bebas Neue";
+  font-family: var(--accent-font);
 }
 
 .team {
-  background-color: #D7DFF2;
+  background-color: var(--primary-color);
 }
 
 .portrait {
@@ -303,18 +313,17 @@ h4 {
 
 /* Footer */
 footer {
-  background-color: #8aabf9;
-  border-top: 3px solid black;
-  padding: 3rem 0 1rem 0;
+  background-color: var(--primary-color-dark);
+  border-top: 3px solid var(--neutral-color-dark);
 }
 
 h6 {
   font-size: 2rem;
-  font-family: "Bebas Neue";
+  font-family: var(--accent-font);
 }
 footer li {
   list-style: none;
-  font-family: "Abel";
+  font-family: var(--base-font);
 }
 
 footer li:hover {
@@ -322,11 +331,61 @@ footer li:hover {
   cursor: pointer;
 }
 
+footer li a {
+  color: var(--neutral-color-dark);
+  text-decoration: none;
+}
+
 .copywrite {
-  font-family: "Abel";
+  font-family: var(--base-font);
   font-size: .8rem;
 }
 
 .fa-brands {
   cursor: pointer;
+}
+
+.socials a {
+  color: var(--secondary-color);
+}
+
+.socials a:hover {
+  color: var(--secondary-color-dark);
+}
+
+@media (min-width: 992px) {
+  .footer-nav {
+    padding-top: 3rem;
+  }
+}
+
+.footer-nav {
+  padding-bottom: 1.5rem;
+}
+
+/* About Us */
+.our-story {
+  margin-top: 7.8rem;
+  border-top: 3px solid var(--neutral-color-dark);
+  background-image: linear-gradient(to top, var(--secondary-color-light), var(--primary-color-light));
+}
+
+.our-story h1 {
+  margin-top: 2rem;
+}
+
+@media (min-width: 992px) {
+  .about-us-des {
+    max-width: 70vw;
+  }
+}
+
+@media (min-width: 576px) {
+  .about-us-des {
+    font-size: 1rem;
+  }
+}
+
+.about-us-img {
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
 }
