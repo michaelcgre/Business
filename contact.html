@@ -59,7 +59,50 @@
         </nav>
 
         <main>
-
+            <div class="container-fluid contact-us">
+                <div class="row">
+                    <div class="col-lg-5 form-container mx-auto">
+                        <h1 class="text-center mt-5">Lets work together!</h1>
+                        <form class="d-flex flex-column" action="/submit_form" method="POST">
+                            <label class="mb-1" for="name">What's your name?</label>
+                            <input class="mb-4 focus-ring-dark" type="text" id="name" name="name" required>
+                        
+                            <label class="mb-1" for="email">What's your email?</label>
+                            <input class="mb-4" type="email" id="email" name="email" required>
+                        
+                            <label class="mb-1" for="phone">What's your phone number?</label>
+                            <input class="mb-4" type="tel" id="phone" name="phone" required>
+                        
+                            <label class="mb-1" for="company">What's your company/organization name?</label>
+                            <input class="mb-4" type="text" id="company" name="company">
+                        
+                            <label class="mb-1" for="services">What services are you looking for?</label>
+                            <select class="mb-4" id="services" name="services" required>
+                              <option value="" disabled selected>Select an option</option>
+                              <option value="Digital Marketing">Digital Marketing</option>
+                              <option value="Social Media Management">Social Media Management</option>
+                              <option value="Search Engine Optimization">Search Engine Optimization</option>
+                              <option value="Content Marketing">Content Marketing</option>
+                              <option value="Email Marketing">Email Marketing</option>
+                            </select>
+                        
+                            <label class="mb-1" for="project">Tell us about your project</label>
+                            <textarea id="project" name="project" rows="6" required></textarea>
+                        
+                            <input class="submit-btn align-self-end" type="submit" value="Submit">
+                          </form>
+                    </div>
+                    <div class="fs-5 col-lg-4 phone-email-container text-center d-lg-flex flex-column justify-content-center align-items-center">
+                        <img class="mx-auto" src="./assets/images/FINENACIAL.png" alt="Logo">
+                        <p>Phone number:</p>
+                        <p>+1-333-333-3333</p>
+                        <p>Email:</p>
+                        <p>trendingsolutions@portfolioproject.com</p>
+                    </div>
+                </div>
+            </div>
+              
+              
         </main>
 
         <footer>
@@ -109,7 +152,7 @@
                     </div>
                 </div>
             </div>
-            <div class="container">
+            <div class="container d-flex justify-content-center align-items-center">
                 <div class="row">
                     <div class="col copywrite">
                         <span>@ Copywrite Trending Solutions</span>

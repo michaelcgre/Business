@@ -42,12 +42,6 @@
   }
 
 /* General */
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -388,4 +382,58 @@ footer li a {
 
 .about-us-img {
   box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+
+
+/* Contact Us */
+.contact-us {
+  margin-top: 7.8rem;
+  padding-bottom: 5rem;
+  border-top: 3px solid var(--neutral-color-dark);
+  background-image: linear-gradient(to top, var(--secondary-color-light), var(--primary-color-light));
+}
+
+
+@media (max-width: 991px) {
+  .form-container {
+    max-width: 30rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .phone-email-container {
+    margin-right: 10rem;
+  }
+}
+
+input,
+select {
+  border: none;
+  border-bottom: 1px solid var(--neutral-color-dark);
+  background-color: transparent;
+}
+
+textarea {
+  background-color: transparent;
+  border: 1px solid var(--neutral-color-dark);
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+}
+
+.submit-btn {
+  background-color: var(--secondary-color);
+  padding: .5rem 3rem;
+  border-radius: 10%/50%;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  border: none;
+  width: 10rem;
+  margin-top: 1rem;
+}
+
+.submit-btn:hover {
+  background-color: var(--secondary-color-dark);
 }
