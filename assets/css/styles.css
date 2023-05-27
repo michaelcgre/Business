@@ -437,3 +437,30 @@ textarea:focus {
 .submit-btn:hover {
   background-color: var(--secondary-color-dark);
 }
+
+/* Careers */
+.join-team-container {
+  border-top: 3px solid var(--neutral-color-dark);
+  background-image: linear-gradient(to top, var(--secondary-color-light), var(--primary-color-light));
+  margin-top: 7.8rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.careers-btn {
+  background-color: var(--secondary-color);
+  padding: .5rem 3rem;
+  border-radius: 10%/50%;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  border: none;
+  width: 12rem;
+  margin-top: 1rem;
+}
+
+.careers-btn:hover {
+  background-color: var(--secondary-color-dark);
+}
+
+.team-img-container {
+  padding-right: -20px;
+}
