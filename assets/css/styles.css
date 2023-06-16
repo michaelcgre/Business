@@ -72,6 +72,14 @@ p {
     width: 100px;
 }
 
+.navbar-toggler,
+.navbar-toggler:hover,
+.navbar-toggler:focus {
+    border: none;
+    box-shadow: none;
+}
+
+
 .nav-link, 
 .dropdown {
     color: var(--primary-color-darker);
@@ -81,6 +89,12 @@ p {
 .nav-link:hover, 
 .dropdown:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 991px) {
+  .dropdown-menu {
+    background-color: var(--primary-color-light);
+  }
 }
 
 .dropdown-item:hover {
@@ -267,7 +281,7 @@ footer li a {
 
 
 /* Contact Us */
-.contact-us {
+.contact-wrapper {
   margin-top: 7.8rem;
   padding-bottom: 5rem;
   border-top: 3px solid var(--neutral-color-dark);
@@ -320,7 +334,7 @@ textarea:focus {
 }
 
 /* Careers */
-.join-team-container {
+.careers-wrapper {
   border-top: 3px solid var(--neutral-color-dark);
   background-image: linear-gradient(to top, var(--secondary-color-light), var(--primary-color-light));
   margin-top: 7.8rem;
@@ -329,12 +343,6 @@ textarea:focus {
 }
 
 .careers-btn {
-  background-color: var(--secondary-color);
-  padding: .5rem 3rem;
-  border-radius: 10%/50%;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-  border: none;
-  width: 12rem;
   margin-top: 1rem;
 }
 
@@ -344,4 +352,50 @@ textarea:focus {
 
 .team-img-container {
   padding-right: -20px;
+}
+
+/* Privacy */
+.privacy-wrapper {
+  margin-top: 7.8rem;
+  border-top: 3px solid var(--neutral-color-dark);
+  background-image: linear-gradient(to top, var(--secondary-color-light), var(--primary-color-light));
+}
+
+/* Terms */
+.terms-wrapper {
+  margin-top: 7.8rem;
+  border-top: 3px solid var(--neutral-color-dark);
+  background-image: linear-gradient(to top, var(--secondary-color-light), var(--primary-color-light));
+}
+
+/* Seo Services */
+.search-engine-wrapper {
+  margin-top: 7.8rem;
+  border-top: 3px solid var(--neutral-color-dark);
+  background-image: linear-gradient(to top, var(--secondary-color-light), var(--primary-color-light));
+}
+
+.key-features-title {
+  font-size: 5rem;
+}
+
+@media (max-width: 767px) {
+  .key-features-title {
+    font-size: 3rem;
+  }
+}
+
+
+/* Social Media Services */
+.social-media-wrapper {
+  margin-top: 7.8rem;
+  border-top: 3px solid var(--neutral-color-dark);
+  background-image: linear-gradient(to top, var(--secondary-color-light), var(--primary-color-light));
+}
+
+/* Web Design Services */
+.website-design-wrapper {
+  margin-top: 7.8rem;
+  border-top: 3px solid var(--neutral-color-dark);
+  background-image: linear-gradient(to top, var(--secondary-color-light), var(--primary-color-light));
 }

@@ -1,248 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>Trending Solutions</title>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <title>Trending Solutions</title>
 
-        <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Abel&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
 
-        <script src="https://kit.fontawesome.com/dec85e8162.js" crossorigin="anonymous"></script>
-    </head>
+<body>
+    <nav class="navbar navbar-expand-lg px-4 fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html"><img class="logo" src="./assets/images/FINENACIAL.png"
+                    alt="Logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav gap-4 text-end">
+                    <li class="nav-item">
+                        <a class="nav-link fs-4" href="./aboutus.html">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fs-4" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu text-end">
+                            <li><a class="dropdown-item" href="./website-design.html">Website Design and Development</a>
+                            </li>
+                            <li><a class="dropdown-item" href="./social-media.html">Social Media Management</a></li>
+                            <li><a class="dropdown-item" href="./search-engine.html">Search Engine Optimization</a></li>
+                        </ul>
+                    <li class="nav-item">
+                        <a class="nav-link fs-4" href="./contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fs-4" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Legal
+                        </a>
+                        <ul class="dropdown-menu text-end">
+                            <li><a class="dropdown-item dropdown-item-divider" href="./privacy.html">Privacy Policy</a>
+                            </li>
+                            <li><a class="dropdown-item" href="./terms-of-service.html">Terms of Service</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-4" href="./careers.html">Careers</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    <body>
-        <nav class="navbar navbar-expand-lg px-4 fixed-top">
+    <main>
+        <div class="hero-wrapper">
             <div class="container">
-                <a class="navbar-brand" href="./index.html"><img class="logo" src="./assets/images/FINENACIAL.png" alt="Logo"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav gap-4 text-end">
-                        <li class="nav-item">
-                            <a class="nav-link fs-4" href="./aboutus.html">About Us</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle fs-4" href="./services.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Services
-                            </a>
-                            <ul class="dropdown-menu text-end">
-                              <li><a class="dropdown-item dropdown-item-divider" href="./website-design.html">Website Design and Development</a></li>
-                              <li><a class="dropdown-item dropdown-item-divider" href="./social-media.html">Social Media Management</a></li>
-                              <li><a class="dropdown-item" href="./search-engine.html">Search Engine Optimization</a></li>
-                            </ul>
-                        <li class="nav-item">
-                            <a class="nav-link fs-4" href="./contact.html">Contact</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle fs-4" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Legal
-                            </a>
-                            <ul class="dropdown-menu text-end">
-                              <li><a class="dropdown-item dropdown-item-divider" href="./privacy.html">Privacy Policy</a></li>
-                              <li><a class="dropdown-item" href="./terms-of-service.html">Terms of Service</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fs-4" href="./careers.html">Careers</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
-        <main>
-            <div class="hero-wrapper">
-                <div class="container">
-                    <div class="row mt-3">
-                        <div class="col-lg-5 hero-text mx-lg-4">
-                            <h1 class="text-center text-lg-start">Selling online is vital to business growth.</h1>
-                            <p class="mt-3 mb-5 fs-5 text-center text-lg-start">Our team of experts are ready to help get your business started!</p>
-                            <div class="d-flex justify-content-center d-lg-block">
-                                <a class="btn mx-auto">Start Now</a>
-                            </div>
+                <div class="row mt-3">
+                    <div class="col-lg-5 hero-text mx-lg-4">
+                        <h1 class="text-center text-lg-start">Selling online is vital to business growth.</h1>
+                        <p class="mt-3 mb-5 fs-5 text-center text-lg-start">Our team of experts are ready to help get
+                            your business started!</p>
+                        <div class="d-flex justify-content-center d-lg-block">
+                            <a href="./contact.html" class="btn mx-auto">Start Now</a>
                         </div>
-                        <div class="col-lg-6 d-flex justify-content-center img-fluid mt-5">
-                            <img class="fade-in-right img-fluid" src="./assets/images/Untitled design(25).png" alt="Two adults planning">
-                        </div>
+                    </div>
+                    <div class="col-lg-6 d-flex justify-content-center img-fluid mt-5">
+                        <img class="fade-in-right img-fluid" src="./assets/images/Untitled design(25).png"
+                            alt="Two adults planning">
                     </div>
                 </div>
             </div>
+        </div>
 
-            <div class="mission-services-wrapper">
-                <div class="container our-mission">
-                    <div class="row">
-                        <div class="col-lg-5 d-flex align-items-center py-4 py-lg-0 order-1 order-lg-0">
-                            <img class="img-fluid" src="./assets/images/Untitled design(21).png" alt="A team standing together">
-                        </div>
-                        <div class="col-lg-6 offset-lg-1 order-0 order-lg-1">
-                            <h2 class="mission-heading mt-3 mb-4 d-flex flex-column text-center">
-                                <span>Our</span>
-                                <span>Mission</span>
-                            </h2>
-                            <p class="mission text-center fs-4">
-                                Our mission is to empower businesses of all sizes to reach their full potential through innovative and effective marketing solutions.
-                                At our core, <span class="imp-text">we are dedicated to helping our clients succeed</span> in a dynamic and ever-changing business landscape, and we measure our success by their success.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="container our-services">
-                    <div class="row">
-                        <div class="col services-title d-flex justify-content-center mt-4">
-                            <span class="fs-1 fw-bold">Some of our services include:</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="container pt-5 services">
-                    <div class="row">
-                        <div class="col-lg-4 service-one">
-                            <img class="icons mx-auto img-fluid" src="./assets/images/6.png" alt="Monitor with a brush over it">
-                            <h3 class="mx-auto text-center my-3">Website Design and Development</h3>
-                            <p class="text-center fs-5">
-                                We offer website design and development services to help our clients establish a strong online presence and showcase their brand to the world.
-                            </p>
-                        </div>
-                        <div class="col-lg-4 service-two">
-                            <img class="icons mx-auto img-fluid" src="./assets/images/7.png" alt="Multiple message icons">
-                            <h3 class="mx-auto text-center my-3">Social Media Management</h3>
-                            <p class="text-center fs-5">
-                                Our social media management services help our clients develop and execute effective social media campaigns across multiple platforms.
-                            </p>
-                        </div>
-                        <div class="col-lg-4 service-three mx-auto">
-                            <img class="icons mx-auto img-fluid" src="./assets/images/8.png" alt="A magnifier with arrow shooting up">
-                            <h3 class="mx-auto text-center my-3">Search Engine Optimization</h3>
-                            <p class="text-center fs-5">
-                                SEO is critical for ensuring that clients' websites appear at the top of search engine results pages (SERPs) to increase traffic to their site.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="container pb-5 mt-3 btn-container text-end">
-                    <div class="row">
-                        <div class="col d-flex justify-content-center d-lg-block">
-                            <button class="btn">View All Services</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-                <div class="team-wrapper">
-                    <div class="container pt-5 team py-4 pb-5">
-                        <div class="row justify-content-center">
-                            <div class="col d-flex justify-content-center mb-5 text-center">
-                                <h4>Meet Our Team</h4>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-4 col-md-6 text-center">
-                                    <img class="portrait mx-auto" src="./assets/images/clay-elliot-mpDV4xaFP8c-unsplash(1).png" alt="Olivias portrait">
-                                    <h5 class="fs-1 mt-2">Olivia Garcia</h5>
-                                    <p>Digital Margeting Manager</p>
-                                </div>
-                                <div class="col-lg-4 col-md-6 text-center">
-                                    <img class="portrait mx-auto" src="./assets/images/bruce-mars-8YG31Xn4dSw-unsplash(1).png" alt="Ethans portrait">
-                                    <h5 class="fs-1 mt-2">Ethan Patel</h5>
-                                    <p>Account Manager</p>
-                                </div>
-                                <div class="col-lg-4 col-md-6 text-center mx-auto">
-                                    <img class="portrait mx-auto" src="./assets/images/thisisengineering-raeng-TXxiFuQLBKQ-unsplash(1).png" alt="Mayas portrait">
-                                    <h5 class="fs-1 mt-2">Maya Singh</h5>
-                                    <p>Creative Director</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            <div class="container">
+        <div class="mission-services-wrapper">
+            <div class="container our-mission">
                 <div class="row">
-                    <div class="col-md-4 d-flex justify-content-center">
-                        <img src="./assets/images/Untitled design(17).png" alt="Digni iT logo">
+                    <div class="col-lg-5 d-flex align-items-center py-4 py-lg-0 order-1 order-lg-0">
+                        <img class="img-fluid" src="./assets/images/Untitled design(21).png"
+                            alt="A team standing together">
                     </div>
-                    <div class="col-md-4 d-flex justify-content-center">
-                        <img src="./assets/images/2.png" alt="Fensmail logo">
-                    </div>
-                    <div class="col-md-4 d-flex justify-content-center">
-                        <img src="./assets/images/3.png" alt="Spencer logo">
-                    </div>
-                    <div class="d-md-flex justify-content-center">
-                        <div class="col-md-4 d-flex justify-content-center">
-                            <img src="./assets/images/4.png" alt="Chat Letter logo">
-                        </div>
-                        <div class="col-md-4 d-flex justify-content-center">
-                            <img src="./assets/images/5.png" alt="Social People logo">
-                        </div>
-                    </div>
-                </div>
-            </div>        
-        </main>
-
-        <footer>
-            <div class="container">
-                <div class="row justify-content-around">
-                    <div class="col-lg-5 d-flex justify-content-center align-items-center flex-column">
-                        <a href="./index.html"><img src="./assets/images/FINENACIAL.png" alt="Logo"></a>
-                    </div>
-                    <div class="col-lg-7 d-sm-flex justify-content-around align-items-baseline text-center footer-nav">
-                        <div class="col d-flex justify-content-center flex-column">
-                            <h6>Company</h6>
-                            <ul class="list-unstyled">
-                                <li><a href="./aboutus.html">About</a></li>
-                                <li><a href="./services.html">Services</a></li>
-                                <li><a href="./contact.html">Contact</a></li>
-                                <li><a href="./careers.html">Careers</a></li>
-                            </ul>
-                        </div>
-                        <div class="col d-flex justify-content-center flex-column">
-                            <h6>Services</h6>
-                            <ul class="list-unstyled">
-                                <li><a href="./website-design.html">Website Design</a></li>
-                                <li><a href="./social-media.html">Social Media Management</a></li>
-                                <li><a href="./search-engine.html">Search Engine Optimization</a></li>
-                            </ul>
-                        </div>
-                        <div class="col d-flex justify-content-center flex-column">
-                            <h6>Legal</h6>
-                            <ul class="list-unstyled">
-                                <li><a href="./privacy.html">Privacy Policy</a></li>
-                                <li><a href="./terms-of-service.html">Terms of Service</a></li>
-                            </ul>
-                        </div>
-                        <div class="col d-flex justify-content-center flex-column">
-                            <h6>Connect</h6>
-                            <div class="list-unstyled d-flex justify-content-center align-items-center flex-column gap-1 fs-3 socials">
-                                <div class="d-flex gap-3">
-                                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                                </div>
-                                <div class="d-flex gap-3">
-                                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="col-lg-6 offset-lg-1 order-0 order-lg-1">
+                        <h2 class="mission-heading mt-3 mb-4 d-flex flex-column text-center">
+                            <span>Our</span>
+                            <span>Mission</span>
+                        </h2>
+                        <p class="mission text-center fs-4">
+                            Our mission is to empower businesses of all sizes to reach their full potential through
+                            innovative and effective marketing solutions.
+                            At our core, <span class="imp-text">we are dedicated to helping our clients succeed</span>
+                            in a dynamic and ever-changing business landscape, and we measure our success by their
+                            success.
+                        </p>
                     </div>
                 </div>
             </div>
-            <div class="container d-flex justify-content-center align-items-center">
+            <div class="container our-services">
                 <div class="row">
-                    <div class="col copywrite">
-                        <span>@ Copywrite Trending Solutions</span>
+                    <div class="col services-title d-flex justify-content-center mt-4">
+                        <span class="fs-1 fw-bold">Some of our services include:</span>
                     </div>
                 </div>
             </div>
-        </footer>
-        
-        <script src="./assets/javascript/script.js"></script>
-    </body>
+            <div class="container py-5 services">
+                <div class="row">
+                    <div class="col-lg-4 service-one">
+                        <img class="icons mx-auto img-fluid" src="./assets/images/6.png"
+                            alt="Monitor with a brush over it">
+                        <h3 class="mx-auto text-center my-3">Website Design and Development</h3>
+                        <p class="text-center fs-5">
+                            We offer website design and development services to help our clients establish a strong
+                            online presence and showcase their brand to the world.
+                        </p>
+                    </div>
+                    <div class="col-lg-4 service-two">
+                        <img class="icons mx-auto img-fluid" src="./assets/images/7.png" alt="Multiple message icons">
+                        <h3 class="mx-auto text-center my-3">Social Media Management</h3>
+                        <p class="text-center fs-5">
+                            Our social media management services help our clients develop and execute effective social
+                            media campaigns across multiple platforms.
+                        </p>
+                    </div>
+                    <div class="col-lg-4 service-three mx-auto">
+                        <img class="icons mx-auto img-fluid" src="./assets/images/8.png"
+                            alt="A magnifier with arrow shooting up">
+                        <h3 class="mx-auto text-center my-3">Search Engine Optimization</h3>
+                        <p class="text-center fs-5">
+                            SEO is critical for ensuring that clients' websites appear at the top of search engine
+                            results pages (SERPs) to increase traffic to their site.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="team-wrapper">
+            <div class="container pt-5 team py-4 pb-5">
+                <div class="row justify-content-center">
+                    <div class="col d-flex justify-content-center mb-5 text-center">
+                        <h4>Meet Our Team</h4>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 text-center">
+                            <img class="portrait mx-auto" src="./assets/images/clay-elliot-mpDV4xaFP8c-unsplash(1).png"
+                                alt="Olivias portrait">
+                            <h5 class="fs-1 mt-2">Olivia Garcia</h5>
+                            <p>Digital Margeting Manager</p>
+                        </div>
+                        <div class="col-lg-4 col-md-6 text-center">
+                            <img class="portrait mx-auto" src="./assets/images/bruce-mars-8YG31Xn4dSw-unsplash(1).png"
+                                alt="Ethans portrait">
+                            <h5 class="fs-1 mt-2">Ethan Patel</h5>
+                            <p>Account Manager</p>
+                        </div>
+                        <div class="col-lg-4 col-md-6 text-center mx-auto">
+                            <img class="portrait mx-auto"
+                                src="./assets/images/thisisengineering-raeng-TXxiFuQLBKQ-unsplash(1).png"
+                                alt="Mayas portrait">
+                            <h5 class="fs-1 mt-2">Maya Singh</h5>
+                            <p>Creative Director</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 d-flex justify-content-center">
+                    <img src="./assets/images/Untitled design(17).png" alt="Digni iT logo">
+                </div>
+                <div class="col-md-4 d-flex justify-content-center">
+                    <img src="./assets/images/2.png" alt="Fensmail logo">
+                </div>
+                <div class="col-md-4 d-flex justify-content-center">
+                    <img src="./assets/images/3.png" alt="Spencer logo">
+                </div>
+                <div class="d-md-flex justify-content-center">
+                    <div class="col-md-4 d-flex justify-content-center">
+                        <img src="./assets/images/4.png" alt="Chat Letter logo">
+                    </div>
+                    <div class="col-md-4 d-flex justify-content-center">
+                        <img src="./assets/images/5.png" alt="Social People logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row justify-content-around">
+                <div class="col-lg-5 d-flex justify-content-center align-items-center flex-column">
+                    <a href="./index.html"><img src="./assets/images/FINENACIAL.png" alt="Logo"></a>
+                </div>
+                <div class="col-lg-7 d-sm-flex justify-content-around align-items-baseline text-center footer-nav">
+                    <div class="col d-flex justify-content-center flex-column">
+                        <h6>Company</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="./aboutus.html">About</a></li>
+                            <li><a href="./contact.html">Contact</a></li>
+                            <li><a href="./careers.html">Careers</a></li>
+                        </ul>
+                    </div>
+                    <div class="col d-flex justify-content-center flex-column">
+                        <h6>Services</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="./website-design.html">Website Design</a></li>
+                            <li><a href="./social-media.html">Social Media Management</a></li>
+                            <li><a href="./search-engine.html">Search Engine Optimization</a></li>
+                        </ul>
+                    </div>
+                    <div class="col d-flex justify-content-center flex-column">
+                        <h6>Legal</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="./privacy.html">Privacy Policy</a></li>
+                            <li><a href="./terms-of-service.html">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container d-flex justify-content-center align-items-center">
+            <div class="row">
+                <div class="col copywrite">
+                    <span>@ Copywrite Trending Solutions</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="node_modules/@popperjs/core/dist/umd/popper-lite.js"></script>
+    <script type="module" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="module" src="./assets/javascript/script.js"></script>
+</body>
+
 </html>
