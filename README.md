@@ -1,8 +1,6 @@
 # Trending Solutions
 Welcome to Trending Solutions! This website showcases a fictional marketing agency, highlighting the services they provide and some of their best work. It's a demonstration of my ability to design and implement modern web solutions.
 
-![Trending Solutions Screenshot](screenshot.png)
-
 ## Table of Contents
 
 - [Project Overview](#project-overview)
